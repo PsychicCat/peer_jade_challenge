@@ -1,0 +1,10 @@
+extends layout
+
+block content
+   #memes
+      each val in meme
+         h2= val.name
+         img(src= val.imageLink)
+
+
+

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "meme1",
+    "imageLink": "/images/meme1.jpg",
+    "id": "1"
+  },
+  {
+    "name": "meme2",
+    "imageLink": "/images/meme2.jpg",
+    "id": "2"
+  },
+  {
+    "name": "meme3",
+    "imageLink": "/images/meme3.jpg",
+    "id": "3"
+  },
+  {
+    "name": "meme4",
+    "imageLink": "/images/meme4.jpg",
+    "id": "4"
+  },
+  {
+    "name": "meme5",
+    "imageLink": "/images/meme5.jpg",
+    "id": "5"
+  }
+]
