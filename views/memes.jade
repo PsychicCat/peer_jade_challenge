@@ -2,11 +2,23 @@ extends layout
 
 block content
    #memes
-      each val in meme
-         h2= val.name
-         img(src= val.imageLink)
-      each val in message
-         p= val.message
+      each val, index in memes
+         .container
+            img(src= val.imageLink)
+            p= messages[index].message
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
