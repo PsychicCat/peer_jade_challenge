@@ -3,11 +3,11 @@ extends layout
 block content
    #memes
       each val in memes
-         .container.row.col-md-6.well(data-id=val.id)
-            img.img-rounded(src= val.imageLink)
+         .container.row.col-md-2.animated.slideInUp(data-id=val.id)
+            img.img-circle.animated.zoomIn(src= val.imageLink)
             form
                input.message(type="text" placeholder="Add A Message...")
-               button.messageSend.btn.btn-primary New Message
+               button.messageSend.btn.btn-block.btn-primary New Message
 
 
 

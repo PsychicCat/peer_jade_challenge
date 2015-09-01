@@ -11,6 +11,7 @@ $(document).ready(function(){
         sendMessage({"message": message, "id": id});
         $(this).parent().next('.messagebox').append(message);
 
+
     })
 });
 
@@ -50,6 +51,7 @@ function getAllMessages(obj){
                     if(elem.id == $id){
                         console.log(elem.id + " " + elem.message);
                         var $p = $('<p>').text(elem.message);
+                        $p.attr('class', 'animated slideInDownBig');
                         $messages.append($p);
                         $div.append($messages);
                     }

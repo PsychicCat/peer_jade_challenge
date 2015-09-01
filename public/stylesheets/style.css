@@ -4,6 +4,10 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+div{
+  margin: 0 auto;
+}
+
 a {
   color: #00B7FF;
 }
@@ -13,20 +17,30 @@ a {
   margin: 20px auto;
 
 }
+
 img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 
 form {
   display: block;
 }
 
+input {
+  margin-top: 10px;
+}
+
 .btn {
-  margin: 5px;
+  margin: 10px 0;
 }
 
 .messagebox {
+  text-align: center;
   background-color: #00B7FF;
   border-radius: 5px;
+}
+
+.well {
+  margin: 0 20px;
 }
