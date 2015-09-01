@@ -2,14 +2,13 @@ extends layout
 
 block content
    #memes
-      each val, index in memes
-         .container(data-id=val.id)
+      each val in memes
+         .container.row.col-md-6.well(data-id=val.id)
+            img.img-rounded(src= val.imageLink)
             form
-               fieldset
-                  img(src= val.imageLink)
-                  p= messages[index].message
-                  input.message(type="text")
-                  button.messageSend New Message
+               input.message(type="text" placeholder="Add A Message...")
+               button.messageSend.btn.btn-primary New Message
+
 
 
 

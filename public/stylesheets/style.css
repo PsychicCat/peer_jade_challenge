@@ -1,8 +1,32 @@
 body {
+  background-color: lightgrey;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.container {
+  text-align: center;
+  margin: 20px auto;
+
+}
+img {
+  width: 300px;
+  height: 300px;
+}
+
+form {
+  display: block;
+}
+
+.btn {
+  margin: 5px;
+}
+
+.messagebox {
+  background-color: #00B7FF;
+  border-radius: 5px;
 }

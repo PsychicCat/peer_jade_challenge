@@ -27,6 +27,7 @@ router.post('/', function(req, res, next) {
                     console.log('Wrote Data!');
                 }
             });
+            res.send(obj);
         }
     })
 });
