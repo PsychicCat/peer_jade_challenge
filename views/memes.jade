@@ -3,9 +3,13 @@ extends layout
 block content
    #memes
       each val, index in memes
-         .container
-            img(src= val.imageLink)
-            p= messages[index].message
+         .container(data-id=val.id)
+            form
+               fieldset
+                  img(src= val.imageLink)
+                  p= messages[index].message
+                  input.message(type="text")
+                  button.messageSend New Message
 
 
 
