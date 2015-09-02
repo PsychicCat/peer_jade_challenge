@@ -9,6 +9,7 @@ var routes = require('./routes/index');
 var memes = require('./routes/memes');
 var postMessage = require('./routes/postMessage');
 var getMessages = require('./routes/getMessages');
+var deleteMessage = require('./routes/')
 
 var app = express();
 

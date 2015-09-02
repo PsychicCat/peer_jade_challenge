@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  each meme in memes
+    include ./memes.jade
+
+  script(id="entry-template" type="text/x-handlebars-template")
+
+    .row
+      label {{message.text}}

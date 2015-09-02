@@ -11,6 +11,16 @@ $(document).ready(function(){
         sendMessage({"message": message, "id": id});
         $(this).parent().next('.messagebox').append(message);
 
+       //var id = $(this).children(["name=message"]).attr('id');
+
+
+    });
+    $('.messageDelete').on('click', function(e){
+        e.preventDefault();
+        //deleteMessage();
+        var $messageBox = $(this).parent().next('.messagebox');
+        $messageBox.last('p').remove();
+
 
     })
 });
@@ -52,7 +62,7 @@ function getAllMessages(){
                     if(elem.id == $id){
                         console.log(elem.id + " " + elem.message);
                         var $p = $('<p>').text(elem.message);
-                        $p.attr('class', 'animated slideInDownBig');
+                        $p.attr('class', 'message animated slideInDownBig');
                         $messages.append($p);
                         $div.append($messages);
                     }
