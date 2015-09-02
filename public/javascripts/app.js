@@ -25,7 +25,7 @@ function sendMessage(obj){
             console.log("ajax complete!");
         },
         success: function(data){
-
+            console.log("Message Posted.");
         },
         error: function(){
             console.log('Error!');
@@ -33,11 +33,11 @@ function sendMessage(obj){
     });
 }
 
-function getAllMessages(obj){
+function getAllMessages(){
     $.ajax({
-        type: 'POST',
-        url: '/postMessage',
-        data: obj,
+        type: 'GET',
+        dataType: 'json',
+        url: '/getMessages',
         complete: function(){
             console.log("ajax complete!");
         },
