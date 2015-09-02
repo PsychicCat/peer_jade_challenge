@@ -42,6 +42,7 @@ function getAllMessages(){
             console.log("ajax complete!");
         },
         success: function(data){
+            console.log(data);
             $('.container').each(function(){
                 var $messages = $('<div>').attr('class','messagebox');
                 var $div = $(this);

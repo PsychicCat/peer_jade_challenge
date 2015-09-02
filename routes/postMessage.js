@@ -4,7 +4,6 @@ var path = require('path');
 var fs = require('fs');
 
 router.post('/', function(req, res, next) {
-    console.log(req.body);
     var newId = req.body.id;
     var newMessage = req.body.message;
     var file = path.join(__dirname, '../models/messages.json');
